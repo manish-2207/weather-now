@@ -15,15 +15,15 @@ def get_weather(city, api_key):
     else:
         return {"error": "City not found or API error"}
 
-if __name__ == "__main__":
-    API_KEY = "98c1c1bfd020ff1a880bd59d9eae7c0b"  
-    city = input("Enter city name: ")
-    weather = get_weather(city, API_KEY)
-    if "error" in weather:
-        print(weather["error"])
-    else:
-        print(f"City: {weather['city']}")
-        print(f"Temperature: {weather['temperature']}°C")
-        print(f"Weather: {weather['weather']}")
-        print(f"Humidity: {weather['humidity']}%")
-        print(f"Wind Speed: {weather['wind_speed']} m/s")
+# if __name__ == "__main__":
+#     API_KEY = "98c1c1bfd020ff1a880bd59d9eae7c0b"  
+#     city = input("Enter city name: ")
+#     weather = get_weather(city, API_KEY)
+#     if "error" in weather:
+#         print(weather["error"])
+#     else:
+#         print(f"City: {weather['city']}")
+#         print(f"Temperature: {weather['temperature']}°C")
+#         print(f"Weather: {weather['weather']}")
+#         print(f"Humidity: {weather['humidity']}%")
+#         print(f"Wind Speed: {weather['wind_speed']} m/s")
